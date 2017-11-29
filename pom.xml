@@ -23,6 +23,7 @@
     </properties>
     <modules>
         <module>basic-semaphores</module>
+        <module>basic-pack</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
