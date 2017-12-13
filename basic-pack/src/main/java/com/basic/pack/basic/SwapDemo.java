@@ -6,7 +6,7 @@ import java.lang.reflect.Field;
  * Created by xh826 on 2017/11/28.
  */
 public class SwapDemo {
-        public static void main(String[] args) {
+        public static void main(String[] args) throws Exception{
             Integer a = 1;
             Integer b = 2;
             System.out.println("a=" + a + ",b=" + b);
