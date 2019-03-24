@@ -10,7 +10,7 @@ import java.time.LocalDate;
  * @projectName: basic-knowledge
  */
 public class JudgeRules {
-    private static String nottime = "2018-03-05至2018-03-09,2018-04-05至2018-04-09,2018-05-05至2018-05-09,2018-06-05至2018-06-09,";
+    private static String nottime = "2018-03-05至2018-03-30,2018-04-05至2018-04-09,2018-05-05至2018-05-09,2018-06-05至2018-06-09,";
     private static String time = "2018-03-05至2018-03-09,2018-04-05至2018-04-09,2018-05-05至2018-05-09,2018-06-05至2018-06-09";
     private static String week = "0,1,2,3,4,5";
 

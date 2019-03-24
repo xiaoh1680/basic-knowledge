@@ -1,9 +1,6 @@
 package com.basic.threads;
 
-import java.util.concurrent.ExecutionException;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-import java.util.concurrent.FutureTask;
+import java.util.concurrent.*;
 
 /**
  * Created by xh826 on 2017/9/16.
@@ -29,5 +26,15 @@ public class FutureTaskTest {
             e.printStackTrace();
         }
         System.out.println("所有任务执行完毕");
+    }
+    static class Task implements Callable<Integer> {
+        public Integer call() throws Exception {
+            System.out.println("子线程在进行计算");
+            Thread.sleep(10000);
+            int sum = 0;
+            for(int i=0;i<100;i++)
+                sum += i;
+            return sum;
+        }
     }
 }
