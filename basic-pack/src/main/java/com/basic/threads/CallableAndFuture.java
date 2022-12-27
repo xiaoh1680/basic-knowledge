@@ -8,6 +8,9 @@ import java.util.concurrent.*;
 public class CallableAndFuture {
         public static void main(String[] args) {
             ExecutorService threadPool = Executors.newCachedThreadPool();
+            ThreadPoolExecutor threadPoolExecutor=new ThreadPoolExecutor(10,10,
+                    0,TimeUnit.SECONDS,new LinkedBlockingQueue<>());
+            threadPoolExecutor.setCorePoolSize(23);
             CompletionService<Integer> cs = new ExecutorCompletionService<Integer>(threadPool);
             for(int i = 1; i < 5; i++) {
                 final int taskID = i;

@@ -23,7 +23,7 @@ public class SemaphoreTest {
                         System.out.println("Accessing: " + NO);
                         Thread.sleep((long) (Math.random() * 10000));
                         semp.release();
-                        System.out.println("-----------------" + semp.availablePermits());
+                        System.out.println(Thread.currentThread().getName()+"-----------------" + semp.availablePermits());
                     } catch (Exception e) {
                         e.printStackTrace();
                     }
